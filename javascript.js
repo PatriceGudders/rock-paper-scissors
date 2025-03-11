@@ -18,9 +18,21 @@ function getComputerChoice() {
 console.log(getComputerChoice());
 
 function getHumanChoice() {
-   humanChoice = prompt("Please enter your choice?");
+   humanChoice = prompt("Please enter your choice?").toLowerCase();
    return humanChoice;
 }
 
 
 console.log(getHumanChoice());
+
+function playRound(computerChoice, humanChoice) {
+    if (computerChoice == humanChoice) {
+
+    }
+    console.log("You lose! " + computerChoice + " beats " + humanChoice);
+}
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
