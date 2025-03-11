@@ -1,4 +1,5 @@
 let computerChoice;
+let humanChoice;
 
 function getComputerChoice() {
     let randomNumber = Math.random();
@@ -10,7 +11,14 @@ function getComputerChoice() {
     } else {
         return computerChoice = "Scissors";
     }
-     
 }
 
 console.log(getComputerChoice());
+
+function getHumanChoice() {
+   humanChoice = prompt("Please enter your choice?");
+   return humanChoice;
+}
+
+
+console.log(getHumanChoice());
